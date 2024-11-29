@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descriptif des SGBD</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+          background-color: #7e7452;
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <hr style="border: 2px solid orangered;">
+        <h1 style="text-align: center;"> Descriptif des principaux systèmes de gestion de bases de données (SGBD)</h1>
+        <link href="css/modele.css" rel="stylesheet" media="all" type="text/css" />
+        
+        <nav style="text-align: center;">
+            
+                <a href="#mysql">MySQL</a>&nbsp;&nbsp;&nbsp;
+                <a href="#postgresql">PostgreSQL</a>&nbsp;&nbsp;&nbsp;
+                <a href="#mongodb">MongoDB</a>&nbsp;&nbsp;&nbsp;
+                <a href="#oracle">Oracle</a>&nbsp;&nbsp;&nbsp;
+                <a href="#sqlserver">SQL Server</a>&nbsp;&nbsp;&nbsp;
+                <a href="#summary">Tableau récapitulatif</a>
+              
+             <hr style="border: 2px solid orangered;">
+                
+            
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section MySQL -->
+        <section id="mysql">
+            <h2>MySQL</h2>
+            <img src="./Images/MySQL.png" style="width: 8%; height: auto;"alt="Capture d'écran de MySQL">
+            <p>MySQL est un système de gestion de bases de données relationnelles (SGBDR) open-source qui utilise le langage SQL (Structured Query Language) pour gérer, manipuler et interroger les données. Il est largement utilisé dans des applications allant des petits projets aux grandes solutions d'entreprise.</p>
+            <ol>
+                <li><strong>Principales fonctionnalités :</strong>
+                    <ul>
+                        <li>Gestion des transactions.</li>
+                        <li>Support des requêtes SQL avancées.</li>
+                        <li>Optimisation pour des performances élevées.</li>
+                    </ul>
+                </li>
+                <li><strong>Forces :</strong>
+                    <ul>
+                        <li>Gratuit et open source.</li>
+                        <li>Large communauté d’utilisateurs.</li>
+                        <li>Intégration facile avec de nombreux outils.</li>
+                    </ul>
+                </li>
+                <li><strong>Limites :</strong>
+                    <ul>
+                        <li>Support limité des grosses bases de données complexes.</li>
+                        <li>Fonctionnalités d’entreprise moins avancées.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><a href="https://www.mysql.com/downloads/" target="_blank">Télécharger sur le site officiel</a></p>
+            <p><a href="#top">Retour au menu</a></p>
+            <hr style="border: 2px solid rgba(61, 9, 23, 0.197);">
+        </section>
+
+        <!-- Section PostgreSQL -->
+        <section id="postgresql">
+            <h2>PostgreSQL</h2>
+            <img src="./Images/postgre.png" style="width: 8%; height: auto;"
+            alt="Capture d'écran de PostgreSQL">
+            <p>PostgreSQL, souvent appelé Postgres, est un système de gestion de bases de données relationnelles (SGBDR) open-source puissant et riche en fonctionnalités. Connu pour sa robustesse, sa conformité avec les normes SQL, et son extensibilité, PostgreSQL est largement utilisé dans des environnements de production critiques.</p>
+            <ol>
+                <li><strong>Principales fonctionnalités :</strong>
+                    <ul>
+                        <li>Gestion avancée des données JSON.</li>
+                        <li>Support des transactions complexes.</li>
+                        <li>Extensibilité grâce aux modules.</li>
+                    </ul>
+                </li>
+                <li><strong>Forces :</strong>
+                    <ul>
+                        <li>Robuste et fiable.</li>
+                        <li>Conforme aux normes SQL.</li>
+                        <li>Open source.</li>
+                    </ul>
+                </li>
+                <li><strong>Limites :</strong>
+                    <ul>
+                        <li>Consommation de ressources élevée.</li>
+                        <li>Courbe d'apprentissage importante.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><a href="https://www.postgresql.org" target="_blank">Télécharger sur le site officiel</a></p>
+            <p><a href="#top">Retour au menu</a></p>
+            <hr style="border: 2px solid rgba(61, 9, 23, 0.197);">
+        </section>
+
+        <!-- Sections MongoDB -->
+        <section id="mongodb">
+            <h2>MongoDB</h2>
+            <img src="./Images/mongo.png" style="width: 8%; height: auto;"
+            alt="Capture d'écran de MongoDB">
+            <p>MongoDB est une base de données NoSQL qui stocke les données sous forme de documents flexibles semblables à JSON. Contrairement aux bases de données relationnelles traditionnelles (comme MySQL ou PostgreSQL), MongoDB est conçu pour gérer des données non structurées ou semi-structurées, avec un accent sur la scalabilité, les performances élevées, et la facilité de développement.</p>
+            <ol>
+                <li><strong>Principales fonctionnalités :</strong>
+                    <ul>
+                        <li>Base de données orientée document
+                            MongoDB stocke les données sous forme de documents BSON (Binary JSON). Cela permet de :
+                            
+                            Gérer des données semi-structurées ou non structurées.
+                            Manipuler des données sous forme de paires clé-valeur (similaires à JSON).
+                            Faciliter la modélisation des données complexes, comme des listes ou des tableaux imbriqués.</li>
+                        <li> Flexibilité du schéma
+                            MongoDB ne nécessite pas de schéma rigide.
+                            
+                            Les documents d'une même collection peuvent avoir des champs différents.
+                            Idéal pour les applications où les structures de données évoluent rapidement.</li>
+                        <li>Haute disponibilité et tolérance aux pannes
+                            Réplication automatique pour éviter la perte de données.
+                            Réallocation automatique des données en cas de panne de serveur (failover).</li>
+                        </ul>
+                        </li>
+                    </li>
+                    <li><strong>Forces :</strong>
+                        <ul>
+                            <li>Orienté document.</li>
+                            <li>Tolérance aux pannes et continuité d'accès.</li>
+                            <li>Sécurité des données pour des cas critiques. 
+                            </li> 
+                        </ul>
+                    </li>
+                    <li><strong>Limites :</strong>
+                        <ul>
+                            <li>Consommation élevée de mémoire.</li>
+                            <li>Absence de structure relationnelle stricte.</li>
+                            <li>Transactions limitées.</li>
+
+                        </ul>
+                    </li>
+                </ol>
+                <p><a href="https://www.mongodb.com/try/download/community" target="_blank">Télécharger sur le site officiel</a></p>
+                <p><a href="#top">Retour au menu</a></p>
+                <hr style="border: 2px solid rgba(61, 9, 23, 0.197);">
+            </section>
+              <!-- Section Oracle -->
+        <section id="oracle">
+            <h2>Oracle</h2>
+            <img src="./Images/oracle.jpg" style="width: 8%; height: auto;"  alt="Capture d'écran de Oracle">
+            <p>Oracle Database est un système de gestion de bases de données relationnelles (SGBDR) développé par Oracle Corporation. Il est largement reconnu comme l'une des bases de données les plus robustes, performantes et sécurisées, utilisée pour des applications critiques à travers le monde.</p>
+            <ol>
+                <li><strong>Principales fonctionnalités :</strong>
+                    <ul>
+                        <li>Gestion relationnelle des données (RDBMS)
+                            Basé sur le modèle relationnel, Oracle prend en charge les tables, colonnes, et relations.
+                            Conforme au standard SQL avec des extensions via PL/SQL pour les scripts complexes.
+                            Garantit l'intégrité des données grâce aux clés primaires, contraintes et triggers.
+                            </li>
+                        <li> Support des environnements cloud
+                            Oracle Cloud Infrastructure (OCI) pour déployer des bases de données dans le cloud.
+                            Fonctionnalités de migration fluide entre les environnements on-premise et cloud.
+                            Services de base de données gérés via Oracle Autonomous Database.
+                            </li>
+                        <li>Compatibilité multi-plateformes
+                            Fonctionne sur des systèmes variés : Linux, Windows, UNIX, et dans le cloud.
+                            Prise en charge des langages de programmation modernes : Java, Python, C++, etc.</li>
+                    </ul>
+                </li>
+                <li><strong>Forces :</strong>
+                    <ul>
+                        <li>Fiabilité et Robustesse.</li>
+                        <li>Support Cloud</li>
+                        <li>Performances élevées</li>
+                    </ul>
+                </li>
+                <li><strong>Limites :</strong>
+                    <ul>
+                        <li>Coût élevé.</li>
+                        <li>Complexité d’administration.</li>
+                        <li>Fonctionnalités avancées payantes.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><a href="https://www.oracle.com/downloads/" target="_blank">Télécharger sur le site officiel</a></p>
+            <p><a href="#top">Retour au menu</a></p>
+            <hr style="border: 2px solid rgba(61, 9, 23, 0.197);">
+        </section>
+         <!-- SQL Server -->
+         <section id="sqlserver">
+            <h2>SQL Server</h2>
+            <img src="./Images/sqlserver.jpg" style="width: 8%; height: auto;"
+            alt="Capture d'écran de SQL Server">
+            <p>Microsoft SQL Server est un système de gestion de bases de données relationnelles (SGBDR) développé par Microsoft. Il est largement utilisé pour les applications transactionnelles, analytiques et hybrides, grâce à ses fonctionnalités robustes et son intégration fluide avec les outils Microsoft.</p>
+            <ol>
+                <li><strong>Principales fonctionnalités :</strong>
+                    <ul>
+                        <li>Système relationnel robuste
+
+                            Support des bases de données relationnelles avec le langage SQL.
+                            Prise en charge des données structurées et semi-structurées (JSON, XML).</li>
+                        <li>Transactions ACID
+
+                            Respect des principes ACID pour garantir l’intégrité des données dans les applications critiques.</li>
+                        <li>Système relationnel robuste
+
+                            Support des bases de données relationnelles avec le langage SQL.
+                            Prise en charge des données structurées et semi-structurées (JSON, XML).</li>
+                    </ul>
+                </li>
+                <li><strong>Forces :</strong>
+                    <ul>
+                        <li>Version gratuite avec de nombreuses fonctionnalités de base.</li>
+                        <li>Sécurité avancée (chiffrement, audits, Always Encrypted).</li>
+                        <li>Interface conviviale et intégration avec les outils Microsoft.</li>
+                    </ul>
+                </li>
+                <li><strong>Limites :</strong>
+                    <ul>
+                        <li>Licences payantes coûteuses pour les versions complètes.</li>
+                        <li>Peut être difficile à configurer correctement sans expertise.</li>
+                        <li>Peut être gourmand en ressources matérielles.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" target="_blank">Télécharger sur le site officiel</a></p>
+            <p><a href="#top">Retour au menu</a></p>
+            <hr style="border: 2px solid rgba(61, 9, 23, 0.197);">
+        </section>
+
+        <!-- Tableau récapitulatif -->
+        <section id="summary">
+            <h2>Tableau récapitulatif</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SDGB</th>
+                        <th>Cout</th>
+                        <th>Norme SQL</th>
+                        <th>Présence d'outils graphiques</th>
+                        <th>Sauvegarde incrémentale</th>
+                        <th>Sauvegarde chaud</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MySQL</td>
+                        <td>MySQL est généralement gratuit et open-source, mais il existe également des versions payantes avec un support commercial.</td>
+                        <td>Supporte SQL standard, mais avec variations</td>
+                        <td>Oui (MySQL Workbench, phpMyAdmin)</td>
+                        <td>C’est supportée, nécessite outils supplémentaires</td>
+                        <td>C’est supportée via outils comme Percona XtraBackup</td>
+                    </tr>
+                    <tr>
+                        <td>PostgreSQL</td>
+                        <td>PostgreSQL est gratuit et open-source.</td>
+                        <td>Très proche de la norme SQL</td>
+                        <td>Oui (pgAdmin, DBeaver)</td>
+                        <td>C’est supportée avec outils tiers</td>
+                        <td>C’est supportée via outils comme pg_basebackup</td>
+                    </tr>
+                    <tr>
+                        <td>MongoDB</td>
+                        <td>COUT	 Oracle est une solution payante avec des coûts de licence et de maintenance élevés	 MySQL est généralement gratuit et open-source, mais il existe également des versions payantes avec un support commercial.	 Microsoft SQL Server est une solution payante avec différentes éditions et options de licence.	PostgreSQL est gratuit et open-source.	 MongoDB est généralement gratuit et open-source, mais des options payantes avec un support commercial sont également disponibles.</td>
+                        <td>Il n'utilise pas SQL (NoSQL, BSON)</td>
+                        <td>Oui (MongoDB Compass)</td>
+                        <td>C’est supportée via les outils intégrés</td>
+                        <td>C’est supportée avec MongoDB Ops Manager</td>
+                    </tr>
+                    <tr>
+                        <td>Oracle</td>
+                        <td> Oracle est une solution payante avec des coûts de licence et de maintenance élevés</td>
+                        <td>Il utilise SQL complet avec extensions propriétaires</td>
+                        <td>Oui (Oracle SQL Developer, Enterprise Manager)</td>
+                        <td>C’est nativement supportée</td>
+                        <td>C’est supportée, diverses options disponibles</td>
+                    </tr>
+                    <tr>
+                        <td>SQL Server</td>
+                        <td>COUT	 Oracle est une solution payante avec des coûts de licence et de maintenance élevés	 MySQL est généralement gratuit et open-source, mais il existe également des versions payantes avec un support commercial.	 Microsoft SQL Server est une solution payante avec différentes éditions et options de licence.	PostgreSQL est gratuit et open-source.	 MongoDB est généralement gratuit et open-source, mais des options payantes avec un support commercial sont également disponibles.</td>
+                        <td>Supporte SQL standard, mais avec variations</td>
+                        <td>Oui (MySQL Workbench, phpMyAdmin)</td>
+                        <td>C’est supportée, nécessite outils supplémentaires</td>
+                        <td>C’est supportée via outils comme Percona XtraBackup</td>
+                    </tr>
+
+                   
+                    <!-- Autres outils -->
+                </tbody>
+            </table>
+        </section>
+        <section id="Referrence"|>
+            <p><a href="#top">Retour au menu</a></p>
+            <h4>Referrence</h4>
+            <li> 
+                <a href="https://starmtech.fr/2023/05/09/comparatif-sgbd/" target="_blank">Comparatif des systèmes de gestion de bases de données (SGBD)</a>" </li>
+            <li><a href="https://www.dnsstuff.com/fr/systemes-de-gestion-de-bases-de-donnees-sql" target="_blank"> Les 5 meilleurs systèmes de gestion de bases de données</li>
+
+            <li><a href="https://hello-pomelo.com/articles/quel-systeme-de-gestion-de-bases-de-donnees-choisir/" target="_blank">Quel système de gestion de bases de données choisir ?</a>"	</li>
+            <li><a href="https://www.guidescomparatifs.com/type/infographies/comparatif-des-bases-de-donnees/" target="_blank"> Comparatif des bases de données : Quel SGBD pour quel usage ?</li>
+    </section>
+    </main>
+</body>
+</html>
+
